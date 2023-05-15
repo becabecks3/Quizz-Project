@@ -1,5 +1,4 @@
 *{
-    /* border: 2px solid black; */
     margin: 0;
 }
 
@@ -24,6 +23,7 @@ body{
     align-items: center;
     background-image: url(./assets/pregunta.jpg);
     background-repeat: repeat;
+    /* background-size: cover; */
     height: 100vh;
 }
 
@@ -37,10 +37,14 @@ body{
     font-size: var(--font-large);
     font-family: Righteous, Times, sans-serif;
     height: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .title h2 {
     font-size: var(--font-medium);
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .start-button{
@@ -80,6 +84,7 @@ header{
     margin: 0, auto;
     font-size: var(--font-medium);
     text-transform: uppercase;
+    text-align: center;
     background-color: var(--yellow);
     font-family: Righteous, Times, sans-serif;
     /* position: fixed;
@@ -92,9 +97,8 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
     margin: 0 auto;
-    padding-top: 85px;
+    padding-top: 8px;
     font-family: Hind Siliguri, Times, sans-serif;
     background-image: url(./assets/pregunta.jpg);
     background-repeat: repeat;
@@ -179,12 +183,31 @@ label:hover{
     transition: transform 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 .button:hover {
     transform: translateY(-5px);
     background-color: var(--black);
     color: var(--yellow);
 }
+
 .button:focus{
     background-color: var(--yellow);
     color: var(--black);
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (min-width: 768px) {
+    .title{
+        margin: 15px;
+    }
+    .title h1{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    header{
+        font-size: 40px;
+    }
 }
