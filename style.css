@@ -1,5 +1,4 @@
 *{
-    font-family: Hind Siliguri, Times, sans-serif;
     /* border: 2px solid black; */
     margin: 0;
 }
@@ -15,19 +14,74 @@
 }
 
 body{
-    background-image: url(./assets/pregunta.jpg);
-    background-repeat: repeat; 
-    /* background-size: cover;  */
-    /* background-position: center; */
+     background-color: var(--yellow);
 }
 
+/* INDEX.HTML */
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/pregunta.jpg);
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: var(--border-radius);
+    font-size: var(--font-large);
+    font-family: Righteous, Times, sans-serif;
+    height: 50%;
+}
+
+.title h2 {
+    font-size: var(--font-medium);
+}
+
+.start-button{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    border-radius: var(--border-radius);
+    background-color: #ffbe0b;
+    color: var(--black);
+    border: none;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:hover{
+    transform: translateY(-5px);
+    background-color: var(--black);
+    color: var(--yellow);
+}
+.start-button:focus{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+/* QUIZZ.HTML */
+
 header{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     padding-top: 35px;
     margin: 0, auto;
     font-size: var(--font-medium);
     text-transform: uppercase;
     background-color: var(--yellow);
+    font-family: Righteous, Times, sans-serif;
     /* position: fixed;
     width: 100%;
     top: 0; */
@@ -39,18 +93,24 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 auto;
     padding-top: 85px;
+    font-family: Hind Siliguri, Times, sans-serif;
+    background-image: url(./assets/pregunta.jpg);
+    background-repeat: repeat;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    width: 80%;
 }
 
 .questions-container{
-    width: 80%;
+    width: 70%;
     height:100%;
     color: var(--black);
     border-radius: var(--border-radius);
-    background-color: rgba(247, 184, 1, 0.7);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(247, 184, 1, 0.7); */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); */
+    
 }
 
 
@@ -63,6 +123,7 @@ p{
     color: var(--white);
     background-color: var(--black);
     border-radius: var(--border-radius);
+    letter-spacing: 2px;
 }
 
 .question{
@@ -86,7 +147,7 @@ label{
     text-align: center;
     margin-top: 15px;
     color:  var(--black);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: var(--border-radius);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     font-size: var(--font-small);
@@ -96,6 +157,8 @@ label{
 
 label:hover{
     transform: translateY(-5px);
+    background-color: var(--yellow);
+    color: var(--black);
 }
 
 /* aplicar focus desde js */
@@ -118,8 +181,10 @@ label:hover{
 }
 .button:hover {
     transform: translateY(-5px);
-}
-.button:focus{
     background-color: var(--black);
     color: var(--yellow);
+}
+.button:focus{
+    background-color: var(--yellow);
+    color: var(--black);
 }
