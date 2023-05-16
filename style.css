@@ -80,6 +80,7 @@ header{
     display: flex;
     justify-content: center;
     align-content: center;
+    /* flex-direction: column; */
     padding-top: 35px;
     margin: 0, auto;
     font-size: var(--font-medium);
@@ -91,6 +92,14 @@ header{
     width: 100%;
     top: 0; */
 }
+/* .refresh {
+    position: fixed;
+} */
+/* img{
+    justify-content: flex-end;
+    height: 50px;
+    width: 50px;
+} */
 
 .form-container{
     display: flex;
