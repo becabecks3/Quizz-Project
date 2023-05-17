@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --yellow: #ffbe0b;
+    --white: #ffffff;
+    --black: #000000;
+    --border-radius: 15px;
+    --font-small: 20px;
+    --font-medium: 25px;
+    --font-large: 30px;
+}
+
+body{
+     background-color: var(--yellow);
+}
+
+/* INDEX.HTML */
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/pregunta.jpg);
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: var(--border-radius);
+    font-size: var(--font-large);
+    font-family: Righteous, Times, sans-serif;
+    height: 60%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.title h2 {
+    font-size: var(--font-medium);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.start-button{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    border-radius: var(--border-radius);
+    background-color: #ffbe0b;
+    color: var(--black);
+    border: none;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:hover{
+    transform: translateY(-5px);
+    background-color: var(--black);
+    color: var(--yellow);
+}
+.start-button:focus{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+/* QUIZZ.HTML */
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Hind Siliguri, Times, sans-serif;
+    background-image: url(./assets/pregunta.jpg);
+    background-repeat: repeat;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    width: 80%;
+}
+
+.form-container h1{
+    padding-top: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--black);
+    font-family: Righteous, Times, sans-serif;
+}    
+
+.questions-container{
+    width: 70%;
+    height:100%;
+    color: var(--black);
+    border-radius: var(--border-radius);
+}
+
+
+p{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 15px 25px;
+    font-size: var(--font-medium);
+    font-weight: bolder;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: var(--border-radius);
+    letter-spacing: 2px;
+}
+
+.question{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.answers-container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin: 15px 25px;
+}
+
+.answers-container input[type="radio"]{
+    display: none; 
+    flex-basis: 50%;
+}
+
+label{
+    cursor: pointer;
+    padding: 15px 25px;
+    text-align: center;
+    margin-top: 15px;
+    color:  var(--black);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    font-size: var(--font-small);
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+label:hover{
+    transform: translateY(-5px);
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+input[type="radio"]:checked + label {
+    background-color: var(--yellow); 
+    color: var(--black);
+  }
+
+.button{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 15px 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    border-radius: var(--border-radius);
+    background-color: #ffbe0b;
+    color: var(--black);
+    border: none;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.button:focus{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+
+/* POP UP */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 400px;
+    width: 700px;
+    color:var(--black);
+    font-size: 25px;
+    font-family: Righteous, Times, sans-serif;
+    text-align: center;
+    background-image: url(./assets/pregunta.jpg);
+    background-repeat: repeat;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.popup h3{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+    line-height: 65px;
+}
+
+.popup a {
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--yellow);
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
+    transition: transform 0.3s;
+}
+
+.popup a:hover {
+    transform: translateY(-5px);
+    background-color: var(--yellow);
+    color: var(--black);
+}
+.popup a:visited{
+    color: var(--white);
+}
+
+.popup h3 span{
+    color: var(--yellow);
+    background-color: var(--black);
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (min-width: 768px) {
+    .title{
+        margin: 15px;
+    }
+    .title h1{
+        text-align: center;
+    }
+
+    .form-container h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    .form-container h1{
+        font-size: 80px;
+    }
+
+    .popup{
+        font-size: 40px;
+        height: 500px;
+        width: 800px;
+    }
+}

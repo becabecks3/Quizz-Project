@@ -10,93 +10,159 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     <title>Quizzz</title>
 </head>
 <body>
     <header>
-        <h1>Capitals of the World</h1>       
+        
+        <!-- <div class="refresh">
+            <a href="quiz.html">
+                <img src="./assets/refresh (1).png" alt="refresh-button">
+            </a>
+        </div>        -->
     </header>
-    <body>
+    <main>
         <form class="form-container">
+            <h1>Capitals of the World</h1>
             <div class="questions-container">
-                <p class="question1">Etiopia</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer1">El Cairo
-                    <input type="radio" name="answer1">Asmara
-                    <input type="radio" name="answer1">Gaborone
-                    <input type="radio" name="answer1" class="correct-answer">Adís Adeba
-                </div>
-                <p class="question2">Indonesia</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer2" class="correct-answer">Jakarta
-                    <input type="radio" name="answer2">Bali
-                    <input type="radio" name="answer2">Naipyidó
-                    <input type="radio" name="answer2" >Hanoi
-                </div>
-                <p class="question3">Colombia</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer3">Medellín
-                    <input type="radio" name="answer3" class="correct-answer">Bogotá
-                    <input type="radio" name="answer3">Montevideo
-                    <input type="radio" name="answer3" >Lima
-                </div>
-                <p class="question4">Brasil</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer4">Rio de Janeiro
-                    <input type="radio" name="answer4">Buenos Aires
-                    <input type="radio" name="answer4" class="correct-answer">Brasilia
-                    <input type="radio" name="answer4" >Sucre
-                </div>
-                <p class="question5">Turquía</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer5">Istanbul
-                    <input type="radio" name="answer5">Asmara
-                    <input type="radio" name="answer5" class="correct-answer">Ankara
-                    <input type="radio" name="answer5" >Sofia
-                </div>
-                <p class="question6">Canadá</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer6">Quebec
-                    <input type="radio" name="answer6">Montreal
-                    <input type="radio" name="answer6" class="correct-answer">Ottawa
-                    <input type="radio" name="answer6">Vancouver
-                </div>
-                <p class="question7">Mongolia</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer7" class="correct-answer">Ulan Bator
-                    <input type="radio" name="answer7">Biskek
-                    <input type="radio" name="answer7">Vientian
-                    <input type="radio" name="answer7" >Taipei
-                </div>
-                <p class="question8">Georgia</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer8">Daca
-                    <input type="radio" name="answer8" class="correct-answer">Tiflis
-                    <input type="radio" name="answer8">Taskent
-                    <input type="radio" name="answer8" >Malé
-                </div>
-                <p class="question9">Afganistán</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer9">Damasco
-                    <input type="radio" name="answer9" class="correct-answer">Kabul
-                    <input type="radio" name="answer9">Teherán
-                    <input type="radio" name="answer9" >Bagdag
-                </div>
-                <p class="question10">Yemen</p>
-                <div class="answers-container">
-                    <input type="radio" name="answer10">Yidda
-                    <input type="radio" name="answer10"class="correct-answer">Saná
-                    <input type="radio" name="answer10">Az Zulfi
-                    <input type="radio" name="answer10">Mascate
-                </div>
-            </div>
-            <div class="button">
-                <input type="submit" value="done">
-            </div>
-        </form>
 
-    </body>
+                <p class="question">Ethiopia</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer1" id="Cairo">
+                    <label for="Cairo">Cairo</label>
+                    <input type="radio" name="answer1" id="Asmara">
+                    <label for="Asmara">Asmara</label>
+                    <input type="radio" name="answer1" id="Gaborone">
+                    <label for="Gaborone">Gaborone</label>
+                    <input type="radio" name="answer1" class="correct-answer" id="Adis-adeba"> 
+                    <label for="Adis-adeba">Adis Adeba</label>     
+                </div>
+
+                <p class="question">Indonesia</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer2" class="correct-answer" id="Jakarta">
+                    <label for="Jakarta">Jakarta</label>
+                    <input type="radio" name="answer2" id="Bali">
+                    <label for="Bali">Bali</label>
+                    <input type="radio" name="answer2" id="Naipyido">
+                    <label for="Naipyido">Naipyido</label>
+                    <input type="radio" name="answer2" id="Hanoi">
+                    <label for="Hanoi">Hanoi</label>
+                </div>
+
+                <p class="question">Colombia</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer3" id="Medellin">
+                    <label for="Medellin">Medellin</label>
+                    <input type="radio" name="answer3" class="correct-answer" id="Bogota" >
+                    <label for="Bogota">Bogota</label>
+                    <input type="radio" name="answer3" id="Montevideo">
+                    <label for="Montevideo">Montevideo</label>
+                    <input type="radio" name="answer3" id="Lima">
+                    <label for="Lima">Lima</label>
+                </div>
+
+                <p class="question">Brazil</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer4" id="Rio-de-Janeiro">    
+                    <label for="Rio-de-Janeiro">Rio de Janeiro</label>    
+                    <input type="radio" name="answer4" id="Buenos-aires">
+                    <label for="Buenos-aires">Buenos Aires</label>
+                    <input type="radio" name="answer4" class="correct-answer" id="Brasilia">
+                    <label for="Brasilia">Brasilia</label>
+                    <input type="radio" name="answer4" id="Sucre">
+                    <label for="Sucre">Sucre</label>
+                </div>
+
+                <p class="question">Turkey</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer5" id="Istanbul">
+                    <label for="Istanbul">Istanbul</label>
+                    <input type="radio" name="answer5" id="Antalya">
+                    <label for="Antalya">Antalya</label>
+                    <input type="radio" name="answer5" class="correct-answer" id="Ankara">
+                    <label for="Ankara">Ankara</label>
+                    <input type="radio" name="answer5" id="Sofia">
+                    <label for="Sofia">Sofia</label>
+                </div>
+
+                <p class="question">Canada</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer6" id="Quebec">
+                    <label for="Quebec">Quebec</label>
+                    <input type="radio" name="answer6" id="Montreal">
+                    <label for="Montreal">Montreal</label>
+                    <input type="radio" name="answer6" class="correct-answer" id="Ottawa">
+                    <label for="Ottawa">Ottawa</label>
+                    <input type="radio" name="answer6" id="Vancouver">
+                    <label for="Vancouver">Vancouver</label>
+                </div>
+
+                <p class="question">Mongolia</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer7" class="correct-answer" id="Ulan-bator">
+                    <label for="Ulan-bator">Ulan Bator</label>
+                    <input type="radio" name="answer7" id="Bisket">
+                    <label for="Bisket">Biskek</label>
+                    <input type="radio" name="answer7" id="Vientan">
+                    <label for="Vientan">Vientian</label>
+                    <input type="radio" name="answer7" id="Taipei">
+                    <label for="Taipei">Taipei</label> 
+                </div>
+
+                <p class="question">Georgia</p>
+                <div class="answers-container">
+                    
+                    <input type="radio" name="answer8" id="Daca">
+                    <label for="Daca">Daca</label>
+                    <input type="radio" name="answer8" class="correct-answer" id="Tiflis">
+                    <label for="Tiflis">Tiflis</label>
+                    <input type="radio" name="answer8" id="Tasknet">
+                    <label for="Tasknet">Taskent</label>
+                    <input type="radio" name="answer8" id="Male">
+                    <label for="Male">Male</label>
+                </div>
+
+                <p class="question">Afghanistan</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer9" id="Damasco">
+                    <label for="Damasco">Damascus</label>
+                    <input type="radio" name="answer9" class="correct-answer" id="Kabul">
+                    <label for="Kabul">Kabul</label>
+                    <input type="radio" name="answer9" id="Teheran">
+                    <label for="Teheran">Teheran</label>
+                    <input type="radio" name="answer9" id="Bagdag">
+                    <label for="Bagdag">Bagdag</label> 
+                </div>
+
+                <p class="question">Yemen</p>
+                <div class="answers-container">
+                    <input type="radio" name="answer10" id="Yidda">
+                    <label for="Yidda">Yidda</label>
+                    <input type="radio" name="answer10" class="correct-answer" id="Sana">
+                    <label for="Sana">Sana</label>
+                    <input type="radio" name="answer10" id="Az-zulfi">
+                    <label for="Az-zulfi">Az Zulfi</label>
+                    <input type="radio" name="answer10" id="Mascate">
+                    <label for="Mascate">Mascate</label>
+                </div>
+
+            </div>
+
+                 
+            <button  class="button" type="submit">Done</button> 
+
+        </form>
+        
+        <section>
+            <!-- APPEND POP UPS -->
+        </section>
+
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
