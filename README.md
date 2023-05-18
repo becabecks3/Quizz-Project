@@ -8,7 +8,7 @@ DOM manipulation, and executing user interactions.
 3. The quiz is displayed entirely on a single page.
 4. Mobile-first approach.
 5. Form validation.
-### Requesitos
+### Requirements
 - DOM manipulation
 - No external libraries
 - Branching system for features and project parts
