@@ -46,7 +46,7 @@ form.addEventListener('submit', function(event){
   //Pintar respuestas correctas  
   let showScore = document.querySelector('section');
   let printGood = `<h3>Congratulations, You are smarter than the average North American.<br><span> Your score is: ${score}</span></h3>`
-  let printBad = `<h3>Oh, No! <br><span>Your score is: ${score}</span><br> Try again after you learnt some geography.<br> Go Cry!</h3>`
+  let printBad = `<h3>Oh, No! <br><span>Your score is: ${score}</span><br> Try again after you've learned some geography.<br> Go Cry!</h3>`
 
   resultMessage = score >= 5 ? printGood : printBad;
 
