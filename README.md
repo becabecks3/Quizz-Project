@@ -20,7 +20,7 @@ DOM manipulation, and executing user interactions.
 ![Quiz](https://github.com/becabecks3/Quizz-Project/blob/main/assets/screenshots/captura2.png)
 ![Quiz](https://github.com/becabecks3/Quizz-Project/blob/main/assets/screenshots/captura8.png)
 ![Results](https://github.com/becabecks3/Quizz-Project/blob/main/assets/screenshots/captura3.png)
-![Results](https://github.com/becabecks3/Quizz-Project/blob/main/assets/screenshots/captura7.png)
+![Results](https://github.com/becabecks3/Quizz-Project/blob/main/assets/screenshots/captura9.png)
 
 
 
