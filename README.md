@@ -15,7 +15,9 @@ DOM manipulation, and executing user interactions.
 ### Links
 -  [Github pages](becabecks3.github.io.)
 ### Screenshots
-
+- ![Home] (/assets/screenshots/captura1.png)
+- ![Quiz] (/assets/screenshots/captura2.png)
+- ![Results] (/assets/screenshots/captura3.png)
 
 
 
